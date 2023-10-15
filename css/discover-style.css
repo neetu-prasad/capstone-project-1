@@ -1,0 +1,392 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* nav bar */
+.top-nav {
+    background-color: #007BFF;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 10px 20px;
+    height: 100px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-weight: bold;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    font-size: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* nav bar end */
+
+/* main search bar */
+.search-bar {
+    background-color: transparent;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -40px;
+    position: sticky;
+    top: 60px;
+    z-index: 200;
+}
+
+.search-bar-container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+.search-input {
+    flex: 1;
+    margin-right: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #0056b3;
+}
+
+/* main search bar end */
+.main-container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+/* filter options and their result container */
+.filter-options-and-result-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.filter-options-container {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+.search-result-container {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+/* filter options */
+/* search */
+.search-container {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: start;
+}
+
+.search-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* search end */
+
+.filter-container {
+    margin-top: 16px;
+    background-color: white;
+    border-radius: 4px;
+    border: 1px solid #f4f4f4;
+}
+
+.filter-title {
+    font-weight: bold;
+    padding: 16px 8px;
+    background-color: #f4f4f4;
+}
+
+.filter-options {
+    padding: 16px 8px;
+}
+
+.filter-options label {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px;
+}
+
+.budget-switch {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 12px;
+}
+
+.switch-label {
+    margin-right: 10px;
+}
+
+.switch-input {
+    display: none;
+}
+
+.switch-slider {
+    width: 40px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 20px;
+    position: relative;
+}
+
+.switch-slider:before {
+    content: "";
+    width: 18px;
+    height: 18px;
+    background-color: #007BFF;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    transition: 0.2s;
+}
+
+.switch-input:checked+.switch-slider:before {
+    transform: translate(20px, -50%);
+}
+
+.star-rating {
+    margin-top: 8px;
+}
+
+.star-button {
+    color: #FFD700;
+    cursor: pointer;
+    padding: 4px;
+    border: 1px solid;
+    border-radius: 4px;
+}
+
+.star-button:hover {
+    color: #FFA500;
+}
+
+/* result side */
+.search-result-title {
+    padding: 8px 20px;
+}
+
+.filter-sort-container {
+    padding: 8px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* top filter  */
+.filter-buttons {
+    display: flex;
+}
+
+.filter-button {
+    padding: 10px 20px;
+    background-color: white;
+    color: #2e2c2c;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 1px solid #8b77ff;
+}
+
+.filter-button:hover {
+    background-color: #007BFF;
+    color: white;
+}
+
+.sort-dropdown {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+/* top filter end */
+
+/* hotel details card */
+.hotel-card {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.image {
+    width: 200px;
+    height: 150px;
+
+}
+
+.hotel_1 {
+    background: url("https://img.freepik.com/free-photo/modern-studio-apartment-design-with-bedroom-living-space_1262-12375.jpg");
+    background-size: cover;
+}
+
+.details {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.rating {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.stars {
+    color: #FFD700;
+}
+
+.description {
+    margin-bottom: 10px;
+}
+
+.availability-button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.price-details {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.price-details span {
+    font-size: small;
+    padding: 4px;
+}
+
+.price {
+    font-size: medium;
+    font-weight: bold;
+    padding: 4px;
+}
+/* hotel details end */
+
+/* warning */
+.warning-container {
+   width: 80%;
+   background-color: #f2d786;
+   padding: 10px;
+   border: 1px solid #ff9800;
+   border-radius: 5px;
+   display: flex;
+   align-items: center;
+}
+
+.warning-icon {
+   font-size: medium;
+   margin-right: 10px;
+}
+
+.warning-message {
+   font-size: small;
+}
+
+/* warning end */
+
+/* footer */
+.footer {
+   margin-top: 48px;
+   width: 95%;
+   padding: 20px;
+   display: flex;
+   justify-content: center;
+}
+
+/* Style the footer sections */
+.footer-section {
+   flex: 1;
+   margin: 0 20px;
+}
+
+/* Style the section headings */
+.section-heading {
+   font-size: medium;
+   font-weight: bold;
+   margin-bottom: 10px;
+}
+
+/* Style the section links */
+.section-link {
+   text-decoration: none;
+   display: block;
+   margin-bottom: 5px;
+   color: #2e2c2c;
+   font-size: small;
+}
+
+.section-link:hover {
+   text-decoration: underline;
+}
+/* footer end */
