@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/discover-style.css">
+</head>
+
+<body>
+    <!-- nav bar -->
+    <div class="top-nav">
+        <div class="logo">
+            <i class="icon fa fa-plane"></i>
+            My Dream Place
+        </div>
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Discover</a></li>
+            <li><a href="#">Activities</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="icons">
+            <i class="icon fa fa-bell"></i>
+            <i class="icon fa fa-user"></i>
+        </div>
+    </div>
+    <!-- end nav bar -->
+
+    <!-- search bar -->
+    <div class="search-bar">
+        <div class="search-bar-container">
+            <input class="search-input" type="text" placeholder="Location">
+            <input class="search-input" type="date" placeholder="Start Date">
+            <input class="search-input" type="date" placeholder="End Date">
+            <input class="search-input" type="text" placeholder="People">
+            <button class="search-button">Search</button>
+        </div>
+    </div>
+    <!-- search bar end -->
+
+    <!-- main container -->
+    <div class="main-container">
+        <div class="filter-options-and-result-container">
+            <div class="filter-options-container">
+                <div class="search-container">
+                    <div class="search-title">Search by Property Name</div>
+                    <input class="search-input" type="text" placeholder="Enter Property Name">
+                </div>
+
+                <div class="filter-container">
+                    <div class="filter-title">Your budget per day</div>
+                    <div class="filter-options">
+                        <label>
+                            <div><input type="checkbox" name="budget" value="0-200"> $0 - $200</div>
+                            <p>200</p>
+                        </label>
+                        <label>
+                            <div><input type="checkbox" name="budget" value="0-200"> $200 - $500</div>
+                            <p>100</p>
+                        </label>
+                        <label>
+                            <div><input type="checkbox" name="budget" value="0-200"> $500 - $1,000</div>
+                            <p>15</p>
+                        </label>
+                        <label>
+                            <div><input type="checkbox" name="budget" value="0-200"> $1,000 - $2,000</div>
+                            <p>12</p>
+                        </label>
+                        <label>
+                            <div><input type="checkbox" name="budget" value="0-200"> $2,000 - $5,000</div>
+                            <p>230</p>
+                        </label>
+                    </div>
+                    <div class="budget-switch">
+                        <span class="switch-label">Set your own budget</span>
+                        <label class="switch-slider-label">
+                            <input class="switch-input" type="checkbox">
+                            <div class="switch-slider"></div>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="filter-container">
+                    <div class="filter-title">Rating</div>
+                    <div class="filter-options">
+                        Show only ratings more than
+                        <div class="star-rating">
+                            <span class="star-button">1 <i class="fa fa-star"></i></span>
+                            <span class="star-button">2 <i class="fa fa-star"></i></span>
+                            <span class="star-button">3 <i class="fa fa-star"></i></span>
+                            <span class="star-button">4 <i class="fa fa-star"></i></span>
+                            <span class="star-button">5 <i class="fa fa-star"></i></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filter-container">
+                    <div class="filter-title">Popular Filters</div>
+                    <div class="filter-options">
+                        <label>
+                            <div><input type="checkbox" name="popular" value="free-cancellation"> Free cancellation
+                            </div>
+                            <p>200</p>
+                        </label>
+                        <label>
+                            <div><input type="checkbox" name="popular" value="spa"> Spa</div>
+                            <p>100</p>
+                        </label>
+                        <label>
+                            <div><input type="checkbox" name="popular" value="beach-front"> Beach front</div>
+                            <p>15</p>
+                        </label>
+                        <label>
+                            <div><input type="checkbox" name="popular" value="hot-tub-or-jacuzzi"> Hot tub/jacuzzi</div>
+                            <p>12</p>
+                        </label>
+                        <label>
+                            <div><input type="checkbox" name="popular" value="without-credit-card"> Book without credit
+                                card
+                            </div>
+                            <p>230</p>
+                        </label>
+                        <label>
+                            <div><input type="checkbox" name="popular" value="no-prepayment"> No prepayment</div>
+                            <p>12</p>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="filter-container">
+                    <div class="filter-title">Activities</div>
+                    <div class="filter-options">
+                        <label>
+                            <div><input type="checkbox" name="popular" value="fishing"> Fishing</div>
+                            <p>200</p>
+                        </label>
+                        <label>
+                            <div><input type="checkbox" name="popular" value="hiking"> Hiking</div>
+                            <p>100</p>
+                        </label>
+                        <label>
+                            <div><input type="checkbox" name="popular" value="beach"> Beach</div>
+                            <p>15</p>
+                        </label>
+                        <label>
+                            <div><input type="checkbox" name="popular" value="cycling"> Cycling</div>
+                            <p>12</p>
+                        </label>
+                        <label>
+                            <div><input type="checkbox" name="popular" value="sauna"> Sauna</div>
+                            <p>230</p>
+                        </label>
+                        <label>
+                            <div><input type="checkbox" name="popular" value="night-lights"> Night lights</div>
+                            <p>12</p>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="search-result-container">
+                <div class="search-result-title">
+                    <h3>Melbourne: 2,582 search results found</h3>
+                </div>
+                <div class="filter-sort-container">
+                    <div class="filter-buttons">
+                        <button class="filter-button">Our top picks</button>
+                        <button class="filter-button">Hotels and Apartments</button>
+                        <button class="filter-button">Residence</button>
+                        <button class="filter-button">Resorts</button>
+                        <button class="filter-button">Shared Space</button>
+                    </div>
+                    <select class="sort-dropdown">
+                        <option value="">Sort by</option>
+                        <option value="price">Price</option>
+                        <option value="rating">Rating</option>
+                        <option value="popularity">Popularity</option>
+                    </select>
+                </div>
+
+                <div class="result-container">
+                    <div class="hotel-card">
+                        <div class="image hotel_1"> </div>
+                        <div class="details">
+                            <div class="title">Aghnim Scepter Hotel</div>
+                            <div class="rating">
+                                <div class="stars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                        class="fa fa-star"></i><i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i>
+                                </div>
+                                <span> 4.5 (1200 reviews)</span>
+                            </div>
+                            <div class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </div>
+                            <button class="availability-button">See Availability</button>
+                        </div>
+                        <div class="price-details">
+                            <span>1 room 2 days</span>
+                            <p class="price">$200</p>
+                            <span>Includes taxes and fees</span>
+                        </div>
+                    </div>
+                    <div class="hotel-card">
+                        <div class="image hotel_1"> </div>
+                        <div class="details">
+                            <div class="title">Aghnim Scepter Hotel</div>
+                            <div class="rating">
+                                <div class="stars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                        class="fa fa-star"></i><i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i>
+                                </div>
+                                <span> 4.5 (1200 reviews)</span>
+                            </div>
+                            <div class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </div>
+                            <button class="availability-button">See Availability</button>
+                        </div>
+                        <div class="price-details">
+                            <span>1 room 2 days</span>
+                            <p class="price">$200</p>
+                            <span>Includes taxes and fees</span>
+                        </div>
+                    </div>
+                    <div class="hotel-card">
+                        <div class="image hotel_1"> </div>
+                        <div class="details">
+                            <div class="title">Aghnim Scepter Hotel</div>
+                            <div class="rating">
+                                <div class="stars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                        class="fa fa-star"></i><i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i>
+                                </div>
+                                <span> 4.5 (1200 reviews)</span>
+                            </div>
+                            <div class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </div>
+                            <button class="availability-button">See Availability</button>
+                        </div>
+                        <div class="price-details">
+                            <span>1 room 2 days</span>
+                            <p class="price">$200</p>
+                            <span>Includes taxes and fees</span>
+                        </div>
+                    </div>
+                    <div class="hotel-card">
+                        <div class="image hotel_1"> </div>
+                        <div class="details">
+                            <div class="title">Aghnim Scepter Hotel</div>
+                            <div class="rating">
+                                <div class="stars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                        class="fa fa-star"></i><i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i>
+                                </div>
+                                <span> 4.5 (1200 reviews)</span>
+                            </div>
+                            <div class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </div>
+                            <button class="availability-button">See Availability</button>
+                        </div>
+                        <div class="price-details">
+                            <span>1 room 2 days</span>
+                            <p class="price">$200</p>
+                            <span>Includes taxes and fees</span>
+                        </div>
+                    </div>
+                    <div class="hotel-card">
+                        <div class="image hotel_1"> </div>
+                        <div class="details">
+                            <div class="title">Aghnim Scepter Hotel</div>
+                            <div class="rating">
+                                <div class="stars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                        class="fa fa-star"></i><i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i>
+                                </div>
+                                <span> 4.5 (1200 reviews)</span>
+                            </div>
+                            <div class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </div>
+                            <button class="availability-button">See Availability</button>
+                        </div>
+                        <div class="price-details">
+                            <span>1 room 2 days</span>
+                            <p class="price">$200</p>
+                            <span>Includes taxes and fees</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="warning-container">
+            <i class="fa fa-exclamation-triangle warning-icon"></i>
+            <div class="warning-message">Check the latest COVID-19 restrictions before you travel. <a href="#">Learn
+                    more</a></div>
+        </div>
+        <!-- footer -->
+        <footer class="footer">
+            <div class="footer-section">
+                <div class="section-heading">
+                    <i class="icon fa fa-plane"></i>my Dream Place
+                </div>
+                <span>Your next goto companion for travel</span>
+            </div>
+            <div class="footer-section">
+                <div class="section-heading">Company</div>
+                <a href="#" class="section-link">About</a>
+                <a href="#" class="section-link">Jobs</a>
+                <a href="#" class="section-link">Newsroom</a>
+                <a href="#" class="section-link">Advertising</a>
+                <a href="#" class="section-link">Contact us</a>
+            </div>
+            <div class="footer-section">
+                <div class="section-heading">Explore</div>
+                <a href="#" class="section-link">Australia</a>
+                <a href="#" class="section-link">New Zealand</a>
+                <a href="#" class="section-link">United States America (USA)</a>   
+                <a href="#" class="section-link">Greece</a>          
+                <a href="#" class="section-link">Maldives</a>
+                <a href="#" class="section-link">Singapore</a>
+            </div>
+            <div class="footer-section">
+                <div class="section-heading">Terms and Policies</div>
+                <a href="#" class="section-link">Privacy Policy</a>
+                <a href="#" class="section-link">Terms of use</a>
+                <a href="#" class="section-link">Acessibility</a>
+                <a href="#" class="section-link">Reward system policy</a>
+            </div>
+            <div class="footer-section">
+                <div class="section-heading">Help</div>
+                <a href="#" class="section-link">Support</a>
+                <a href="#" class="section-link">Cancel your bookings</a>
+                <a href="#" class="section-link">Use Coupon</a>
+                <a href="#" class="section-link">Refund Policies</a>                
+                <a href="#" class="section-link">Internal Travel Documents</a>
+            </div>
+        </footer>
+        <!-- footer end -->
+    </div>
+    <!-- end main container -->
+</body>
+
+</html>
