@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* nav bar */
+.top-nav {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 36px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-weight: bold;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.menu li a {
+    color: rgb(30, 29, 29);
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.nav-links li {
+    margin-right: 20px;
+    padding: 8px 16px;
+    border: 1px solid rgb(128, 128, 128);
+    border-radius: 4px;
+}
+.nav-links li:hover {
+    background-color: #007BFF;
+}
+
+.nav-links li a {
+    text-decoration: none;
+}
+.nav-links li a:hover {
+    color: white;
+}
+
+/* nav bar end */
+/* main container */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    padding: 8px 48px;
+}
+
+/* main page image */
+.main-image-container {
+    width: 100%;
+    height: 450px;
+    background: url("https://img.freepik.com/free-photo/aerial-view-long-tail-boat-ocean-thailand_335224-728.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* align-items: center; */
+    justify-content: center;
+    color: white;
+    line-height: 1.5;
+}
+
+.main-image-container h3 {
+    margin-bottom: 20px;
+}
+
+/* main container end */
+
+
+/* main search bar */
+.search-bar {
+    background-color: transparent;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -40px;
+    position: sticky;
+    top: 34px;
+    z-index: 200;
+}
+
+.search-bar-container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+.search-input {
+    flex: 1;
+    margin-right: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #0056b3;
+}
+
+/* main search bar end */
+
+/* warning */
+.warning-container {
+    background-color: #f2d786;
+    padding: 10px;
+    border: 1px solid #ff9800;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.warning-icon {
+    font-size: medium;
+    margin-right: 10px;
+}
+
+.warning-message {
+    font-size: small;
+}
+
+/* warning end */
+
+/* countries */
+.image-grid-container {
+    margin-top: 48px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.title {
+    font-size: large;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: small;
+    margin-bottom: 24px;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.image-card {
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.image-info {
+    padding: 10px;
+}
+
+.image-name {
+    font-size: medium;
+    font-weight: bold;
+}
+
+.properties-count {
+    margin-top: 4px;
+    font-size: small;
+    color: #777;
+}
+
+/* contries end */
+
+/* overlay images */
+
+.image-grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.overlay-image-container {
+    position: relative;
+    width: 100%;
+    height: 250px;
+}
+
+.overlay-image {
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(50, 143, 255, 0.3);
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+}
+
+.overlay-image-title {
+    font-size: medium;
+    font-weight: bold;
+    margin: 0;
+}
+
+.overlay-image-subtitle {
+    font-size: small;
+}
+
+/* overlay image end */
+
+/* footer */
+.footer {
+    margin-top: 48px;
+    width: 95%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.section-heading {
+    font-size: medium;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.section-link {
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+    color: #2e2c2c;
+    font-size: small;
+}
+
+.section-link:hover {
+    text-decoration: underline;
+}
+
+/* footer end */
