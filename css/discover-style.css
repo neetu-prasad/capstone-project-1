@@ -26,6 +26,10 @@ body {
     font-weight: bold;
 }
 
+.logo i{
+    color: #007BFF;
+}
+
 .menu {
     list-style: none;
     display: flex;
