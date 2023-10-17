@@ -282,6 +282,8 @@ body {
 }
 
 .details {
+    display: flex;
+    flex-direction: column;
     flex: 1;
     margin-left: 20px;
 }
@@ -312,6 +314,9 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    text-decoration: none;
+    width: fit-content;
+    font-size: small;
 }
 
 .price-details {
