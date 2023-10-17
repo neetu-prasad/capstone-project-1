@@ -24,7 +24,7 @@ body {
     font-weight: bold;
 }
 
-.logo i{
+.fa-plane{
     color: #007BFF;
     transform: rotate(0.9turn);
 }
