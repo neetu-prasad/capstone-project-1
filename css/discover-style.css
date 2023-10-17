@@ -27,7 +27,7 @@ body {
 }
 
 .logo i{
-    color: #007BFF;
+    transform: rotate(0.9turn);
 }
 
 .menu {
