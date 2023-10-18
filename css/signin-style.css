@@ -24,6 +24,11 @@ body {
     font-weight: bold;
 }
 
+.fa-plane{
+    color: #007BFF;
+    transform: rotate(0.9turn);
+}
+
 .main-container{
     width: 100%;
     display: flex;
