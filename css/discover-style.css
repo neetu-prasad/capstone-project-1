@@ -280,25 +280,33 @@ body {
 
 .image {
     width: 200px;
-    height: 150px;
+    height: 180px;
 
 }
 
 .hotel_1 {
     background: url("https://img.freepik.com/free-photo/modern-studio-apartment-design-with-bedroom-living-space_1262-12375.jpg");
     background-size: cover;
+    border-radius: 5px;
+    
 }
 .hotel_2{
     background: url("https://img.freepik.com/premium-photo/bed-nightstand-modern-bedroom-equipment-comfortable-restful-experienc_56644-244.jpg");
     background-size: cover;
+    border-radius: 5px;
+    
 }
 .hotel_3{
     background: url("https://img.freepik.com/premium-photo/luxury-restaurant-contemporary-style-with-exquisite-modern-furniture-designer-listroy-with-hidden-lighting_295714-17.jpg");
     background-size: cover;
+    border-radius: 5px;
+    
 }
 .hotel_4{
     background: url("https://img.freepik.com/free-photo/summer-beautiful-island-village-cyclades_1203-4549.jpg?size=626&ext=jpg");
     background-size: cover;
+    border-radius: 5px;
+    
 }
 
 .offer-1{
@@ -328,7 +336,8 @@ body {
 
 .discount-button-2{
     width: 82px;
-    margin-left: 112px;
+    margin-left: 120px;
+    background-color: green;
 }
 
 .details {
