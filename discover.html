@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Discover</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
@@ -34,12 +34,13 @@
     <!-- end nav bar -->
 
     <!-- search bar -->
+    </div>
     <div class="search-bar">
         <div class="search-bar-container">
-            <input class="search-input" type="text" placeholder="Location">
-            <input class="search-input" type="date" placeholder="Start Date">
-            <input class="search-input" type="date" placeholder="End Date">
-            <input class="search-input" type="text" placeholder="People">
+            <input class="search-input" type="text" placeholder="Melbourne">
+            <input class="search-input" type="text" placeholder="Mar 18,2022"  onfocus="(this.type='date')">
+            <input class="search-input" type="text" placeholder="Mar 20, 2022" onfocus="(this.type='date')">
+            <input class="search-input" type="text" placeholder="2 adult, 1 room">
             <button class="search-button">Search</button>
         </div>
     </div>
@@ -51,7 +52,7 @@
             <div class="filter-options-container">
                 <div class="search-container">
                     <div class="search-title">Search by Property Name</div>
-                    <input class="search-input" type="text" placeholder="Enter Property Name">
+                    <input class="search-input" type="text" placeholder="eg. Beach westpalm">
                 </div>
 
                 <div class="filter-container">
@@ -105,16 +106,16 @@
                     <div class="filter-title">Popular Filters</div>
                     <div class="filter-options">
                         <label>
-                            <div><input type="checkbox" name="popular" value="free-cancellation"> Free cancellation
+                            <div><input class="checkbox" type="checkbox" name="popular" value="free-cancellation"> Free cancellation
                             </div>
                             <p>200</p>
                         </label>
                         <label>
-                            <div><input type="checkbox" name="popular" value="spa"> Spa</div>
+                            <div><input class="checkbox" type="checkbox" name="popular" value="spa"> Spa</div>
                             <p>100</p>
                         </label>
                         <label>
-                            <div><input type="checkbox" name="popular" value="beach-front"> Beach front</div>
+                            <div><input class="checkbox" type="checkbox" name="popular" value="beach-front"> Beach front</div>
                             <p>15</p>
                         </label>
                         <label>
@@ -122,13 +123,13 @@
                             <p>12</p>
                         </label>
                         <label>
-                            <div><input type="checkbox" name="popular" value="without-credit-card"> Book without credit
+                            <div><input class="checkbox" type="checkbox" name="popular" value="without-credit-card"> Book without credit
                                 card
                             </div>
                             <p>230</p>
                         </label>
                         <label>
-                            <div><input type="checkbox" name="popular" value="no-prepayment"> No prepayment</div>
+                            <div><input class="checkbox" type="checkbox" name="popular" value="no-prepayment"> No prepayment</div>
                             <p>12</p>
                         </label>
                     </div>
@@ -186,9 +187,10 @@
 
                 <div class="result-container">
                     <div class="hotel-card">
-                        <div class="image hotel_1"> </div>
+                        <div class="image hotel_1"> 
+                        </div>
                         <div class="details">
-                            <div class="title">Aghnim Scepter Hotel</div>
+                            <div class="title">Lakeside Motel Warefront </div>
                             <div class="rating">
                                 <div class="stars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
                                         class="fa fa-star"></i><i class="fa fa-star"></i>
@@ -197,20 +199,22 @@
                                 <span> 4.5 (1200 reviews)</span>
                             </div>
                             <div class="description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                <p>Live a little and celebrate with champagne</p>
+                                <p>Reats include a glass of French champagne, parking and a late <br> checkout. Gym included. Flexible cancellation applies</p>
                             </div>
                             <a class="availability-button" href="http://127.0.0.1:5500/product.html">See Availability</a>
                         </div>
                         <div class="price-details">
+                            <button class="offer-1">Book now and receive 15% off</button>
                             <span>1 room 2 days</span>
-                            <p class="price">$200</p>
+                            <p class="price">$130</p>
                             <span>Includes taxes and fees</span>
                         </div>
                     </div>
                     <div class="hotel-card">
-                        <div class="image hotel_1"> </div>
+                        <div class="image hotel_2"> </div>
                         <div class="details">
-                            <div class="title">Aghnim Scepter Hotel</div>
+                            <div class="title">Julia Dens Resort</div>
                             <div class="rating">
                                 <div class="stars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
                                         class="fa fa-star"></i><i class="fa fa-star"></i>
@@ -219,20 +223,21 @@
                                 <span> 4.5 (1200 reviews)</span>
                             </div>
                             <div class="description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                <p>Live a little and celebrate with champagne</p>
+                                <p>Reats include a glass of French champagne, parking and a late <br> checkout. Gym included. Flexible cancellation applies</p>
                             </div>
                             <a class="availability-button" href="#">See Availability</a>
                         </div>
                         <div class="price-details">
                             <span>1 room 2 days</span>
-                            <p class="price">$200</p>
+                            <p class="price">$240</p>
                             <span>Includes taxes and fees</span>
                         </div>
                     </div>
                     <div class="hotel-card">
-                        <div class="image hotel_1"> </div>
+                        <div class="image hotel_3"> </div>
                         <div class="details">
-                            <div class="title">Aghnim Scepter Hotel</div>
+                            <div class="title">Aghim Scepter Hotel</div>
                             <div class="rating">
                                 <div class="stars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
                                         class="fa fa-star"></i><i class="fa fa-star"></i>
@@ -241,20 +246,22 @@
                                 <span> 4.5 (1200 reviews)</span>
                             </div>
                             <div class="description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                <p>Live a little and celebrate with champagne</p>
+                                <p>Reats include a glass of French champagne, parking and a late <br> checkout. Gym included. Flexible cancellation applies</p>
                             </div>
                             <a class="availability-button" href="#">See Availability</a>
                         </div>
                         <div class="price-details">
+                            <button class="offer-1 offer-2">Book now and receive 15% off</button>
                             <span>1 room 2 days</span>
-                            <p class="price">$200</p>
+                            <p class="price">$300</p>
                             <span>Includes taxes and fees</span>
                         </div>
                     </div>
                     <div class="hotel-card">
-                        <div class="image hotel_1"> </div>
+                        <div class="image hotel_4"> </div>
                         <div class="details">
-                            <div class="title">Aghnim Scepter Hotel</div>
+                            <div class="title">Marineford Hotel</div>
                             <div class="rating">
                                 <div class="stars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
                                         class="fa fa-star"></i><i class="fa fa-star"></i>
@@ -263,20 +270,21 @@
                                 <span> 4.5 (1200 reviews)</span>
                             </div>
                             <div class="description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                <p>Live a little and celebrate with champagne</p>
+                                <p>Reats include a glass of French champagne, parking and a late <br> checkout. Gym included. Flexible cancellation applies</p>
                             </div>
                             <a class="availability-button" href="#">See Availability</a>
                         </div>
                         <div class="price-details">
                             <span>1 room 2 days</span>
-                            <p class="price">$200</p>
+                            <p class="price">$120</p>
                             <span>Includes taxes and fees</span>
                         </div>
                     </div>
                     <div class="hotel-card">
                         <div class="image hotel_1"> </div>
                         <div class="details">
-                            <div class="title">Aghnim Scepter Hotel</div>
+                            <div class="title">Shanghai Open House</div>
                             <div class="rating">
                                 <div class="stars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
                                         class="fa fa-star"></i><i class="fa fa-star"></i>
@@ -285,29 +293,105 @@
                                 <span> 4.5 (1200 reviews)</span>
                             </div>
                             <div class="description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                <p>Live a little and celebrate with champagne</p>
+                                <p>Reats include a glass of French champagne, parking and a late <br> checkout. Gym included. Flexible cancellation applies</p>
                             </div>
                             <a class="availability-button" href="#">See Availability</a>
                         </div>
                         <div class="price-details">
                             <span>1 room 2 days</span>
-                            <p class="price">$200</p>
+                            <p class="price">$145</p>
+                            <span>Includes taxes and fees</span>
+                        </div>
+                    </div>
+                    <div class="hotel-card">
+                        <div class="image hotel_2"> </div>
+                        <div class="details">
+                            <div class="title">Ocean Waves Resort</div>
+                            <div class="rating">
+                                <div class="stars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                        class="fa fa-star"></i><i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i>
+                                </div>
+                                <span> 4.5 (1200 reviews)</span>
+                            </div>
+                            <div class="description">
+                                <p>Live a little and celebrate with champagne</p>
+                                <p>Reats include a glass of French champagne, parking and a late <br> checkout. Gym included. Flexible cancellation applies</p>
+                            </div>
+                            <a class="availability-button" href="#">See Availability</a>
+                        </div>
+                        <div class="price-details">
+                            <span>1 room 2 days</span>
+                            <p class="price">$310</p>
+                            <span>Includes taxes and fees</span>
+                        </div>
+                    </div>
+                    <div class="hotel-card">
+                        <div class="image hotel_3"> </div>
+                        <div class="details">
+                            <div class="title">Maimi City frontier</div>
+                            <div class="rating">
+                                <div class="stars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                        class="fa fa-star"></i><i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i>
+                                </div>
+                                <span> 4.5 (1200 reviews)</span>
+                            </div>
+                            <div class="description">
+                                <p>Live a little and celebrate with champagne</p>
+                                <p>Reats include a glass of French champagne, parking and a late <br> checkout. Gym included. Flexible cancellation applies</p>
+                            </div>
+                            <a class="availability-button" href="#">See Availability</a>
+                        </div>
+                        <div class="price-details">
+                            <button class="offer-1 offer-2 ">Book now and receive 15% off</button>
+                            <button class="discount-button discount-button-2">15% off</button>
+                            <span>1 room 2 days</span>
+                            <p class="price"> <strike class="strike-through">$190</strike> $200</p>
+                            <span>Includes taxes and fees</span>
+                        </div>
+                    </div>
+                    <div class="hotel-card">
+                        <div class="image hotel_4"> </div>
+                        <div class="details">
+                            <div class="title">Lakeside Motel Warefront</div>
+                            <div class="rating">
+                                <div class="stars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                        class="fa fa-star"></i><i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i>
+                                </div>
+                                <span> 4.5 (1200 reviews)</span>
+                            </div>
+                            <div class="description">
+                                <p>Live a little and celebrate with champagne</p>
+                                <p>Reats include a glass of French champagne, parking and a late <br> checkout. Gym included. Flexible cancellation applies</p>.
+                            </div>
+                            <a class="availability-button" href="#">See Availability</a>
+                        </div>
+                        <div class="price-details">
+                            <button class="discount-button">15% off</button>
+                            <span>1 room 2 days</span>
+                            <p class="price"><strike class="strike-through">$300 </strike>$300</p>
                             <span>Includes taxes and fees</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="load-more-results">
+            <button class="load-more-results-button">Load more results</button>
+        </div>
         <div class="warning-container">
             <i class="fa fa-exclamation-triangle warning-icon"></i>
-            <div class="warning-message">Check the latest COVID-19 restrictions before you travel. <a href="#">Learn
-                    more</a></div>
+            <div class="warning-message">Check the latest COVID-19 restrictions before you travel. <a href="#">Learn more</a></div>
         </div>
+        
         <!-- footer -->
         <footer class="footer">
             <div class="footer-section">
                 <div class="section-heading">
-                    <i class="fa-solid fa-plane"></i>my Dream Place
+                    <i class="fa-solid fa-plane fa-plane-2"></i>my Dream Place
                 </div>
                 <span>Your next goto companion for travel</span>
             </div>
@@ -327,6 +411,7 @@
                 <a href="#" class="section-link">Greece</a>          
                 <a href="#" class="section-link">Maldives</a>
                 <a href="#" class="section-link">Singapore</a>
+                <a class="see-more" href="#">See more</a>
             </div>
             <div class="footer-section">
                 <div class="section-heading">Terms and Policies</div>

@@ -27,6 +27,7 @@ body {
 }
 
 .fa-plane{
+    color: white;
     transform: rotate(0.9turn);
 }
 
@@ -164,12 +165,17 @@ body {
 
 .filter-options {
     padding: 16px 8px;
+    line-height: 1.5;
 }
 
 .filter-options label {
     display: flex;
     justify-content: space-between;
     padding: 4px;
+}
+
+.checkbox{
+    border-radius: 50px;
 }
 
 .budget-switch {
@@ -216,14 +222,12 @@ body {
 }
 
 .star-button {
-    color: #FFD700;
     cursor: pointer;
     padding: 4px;
-    border: 1px solid;
+    border: 1px solid rgb(187, 184, 184);
     border-radius: 4px;
 }
-
-.star-button:hover {
+.fa-star{
     color: #FFA500;
 }
 
@@ -284,6 +288,48 @@ body {
     background: url("https://img.freepik.com/free-photo/modern-studio-apartment-design-with-bedroom-living-space_1262-12375.jpg");
     background-size: cover;
 }
+.hotel_2{
+    background: url("https://img.freepik.com/premium-photo/bed-nightstand-modern-bedroom-equipment-comfortable-restful-experienc_56644-244.jpg");
+    background-size: cover;
+}
+.hotel_3{
+    background: url("https://img.freepik.com/premium-photo/luxury-restaurant-contemporary-style-with-exquisite-modern-furniture-designer-listroy-with-hidden-lighting_295714-17.jpg");
+    background-size: cover;
+}
+.hotel_4{
+    background: url("https://img.freepik.com/free-photo/summer-beautiful-island-village-cyclades_1203-4549.jpg?size=626&ext=jpg");
+    background-size: cover;
+}
+
+.offer-1{
+        background-color: red;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        height: 28px;
+        margin-left: 20px;
+        margin-bottom: 48px;
+        padding: 0px 5px;
+}
+
+.offer-2{
+    background-color: orange;
+    padding: 0px 5px;
+}
+
+.discount-button{
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    height: 28px;
+    margin-left: 62px;
+} 
+
+.discount-button-2{
+    width: 82px;
+    margin-left: 112px;
+}
 
 .details {
     display: flex;
@@ -309,6 +355,8 @@ body {
 
 .description {
     margin-bottom: 10px;
+    font-size: small;
+    line-height: 1.5;
 }
 
 .availability-button {
@@ -340,14 +388,18 @@ body {
     font-weight: bold;
     padding: 4px;
 }
+
+.strike-through{
+    margin-left: 10px;
+    color: red;
+}
 /* hotel details end */
 
 /* warning */
 .warning-container {
-   width: 80%;
-   background-color: #f2d786;
+   width: 90%;
+   background-color: rgb(255, 238, 143);
    padding: 10px;
-   border: 1px solid #ff9800;
    border-radius: 5px;
    display: flex;
    align-items: center;
@@ -361,6 +413,27 @@ body {
 .warning-message {
    font-size: small;
 }
+.warning-message a{
+    text-decoration: none;
+}
+
+.load-more-results{
+    display: flexj;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.load-more-results-button{
+    height: 32px;
+    width: 150px;
+    background-color: #bfdcfc;
+    color: blue;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
 
 /* warning end */
 
@@ -373,10 +446,15 @@ body {
    justify-content: center;
 }
 
+.fa-plane-2{
+    color: #007BFF;
+    margin-right: 2px;
+}
 /* Style the footer sections */
 .footer-section {
    flex: 1;
    margin: 0 20px;
+   line-height: 1.5;
 }
 
 /* Style the section headings */
@@ -395,7 +473,12 @@ body {
    font-size: small;
 }
 
+.see-more{
+    text-decoration: none;
+    font-size: small;
+}
 .section-link:hover {
    text-decoration: underline;
 }
+
 /* footer end */
