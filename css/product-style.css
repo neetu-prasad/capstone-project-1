@@ -183,6 +183,9 @@ body {
     padding-right: 48px;
 }
 
+.top-facilities-icon{
+    color: #007BFF;
+}
 
 /*overview tab right side*/
 .overview-tab-content-right{
@@ -192,7 +195,7 @@ body {
 .map-image{
     width: 100%;
     height: 240px;
-    border-radius: 5px;
+    border-radius: 15px;
     overflow: hidden;
     width: 100%;
     object-fit: cover;
@@ -207,10 +210,16 @@ body {
     color: black;
 }
 
+.map-fa-plane{
+    color: black;
+}
 .available-rooms{
     margin: 20px 0px;
 }
 
+.fa-solid{
+    margin-right: 15px;
+}
 
 /* main search bar */
 .search-bar {
@@ -269,6 +278,11 @@ body {
     padding: 20px;
 }
 
+.part1-image-left{
+    height: 100%;
+    background: url("https://img.freepik.com/free-photo/immersive-experience-concept-collage_23-2149498352.jpg?size=626&ext=jpg");
+}
+
 .image-in-part1{
     border-radius: 10px;
     width: 100%;
@@ -293,7 +307,7 @@ body {
 
 /* warning */
 .warning-container {
-    background-color: #f2d786;
+    background-color: rgb(255, 238, 143);
     padding: 10px;
     border-radius: 5px;
     display: flex;
@@ -330,6 +344,7 @@ body {
     font-size: medium;
     font-weight: bold;
     margin-bottom: 10px;
+    line-height: 1.5;
 }
 
 .section-link {
@@ -338,10 +353,19 @@ body {
     margin-bottom: 5px;
     color: black;
     font-size: small;
+    line-height: 1.5;
 }
 
+.your-next-companion{
+    line-height: 1.5;
+    font-size: medium;
+}
 .section-link:hover {
     text-decoration: underline;
 }
 
+.see-more{
+    text-decoration: none;
+    font-size: small;
+}
 /* footer end */
