@@ -23,6 +23,10 @@ body {
 .logo {
     font-weight: bold;
 }
+.fa-plane{
+    color: blue;
+    transform: rotate(0.9turn);
+}
 
 .fa-plane{
     color: #007BFF;
@@ -40,7 +44,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 35%;
+    width: 30%;
 }
 
 .form{
@@ -49,7 +53,7 @@ body {
 
 .sign-in-text {
     margin: 0;
-    padding: 10px 0;
+    padding: 20px 0;
 }
 
 .input-container {
@@ -143,7 +147,7 @@ input {
 .login-options-below:before {
     content: " ";
     height: 2px;
-    width: 30%;
+    width: 25%;
     background-color: #cfcccc;
     display: block;
     position: absolute;
@@ -154,7 +158,7 @@ input {
 .login-options-below:after {
     content: " ";
     height: 2px;
-    width: 30%;
+    width: 25%;
     background-color: #cfcccc;
     display: block;
     position: absolute;
@@ -196,6 +200,7 @@ input {
 }
 
 .no-account {
+    margin-top: 50px;
     font-size: 14px;
 }
 
