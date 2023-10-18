@@ -217,7 +217,7 @@ body {
     margin: 20px 0px;
 }
 
-.fa-solid{
+.fa-solid,.fa-regular{
     margin-right: 15px;
 }
 
@@ -270,6 +270,12 @@ body {
     gap: 20px;
 }
 
+.part-first-image{
+    background: url("https://img.freepik.com/free-photo/full-shot-travel-concept-with-landmarks_23-2149153258.jpg?size=626&ext=jpg");
+    border-radius: 10px;
+    height: 84%;
+}
+
 .part1-image{
     overflow: hidden;
     background-color: white;
@@ -292,7 +298,7 @@ body {
     
 }
 .business, .fa-mattress-pillow, .thumbs-up{
-    padding-right: 10px;
+    padding-right: 5px;
     color: black;
 }
 .reserve-suit-button {
