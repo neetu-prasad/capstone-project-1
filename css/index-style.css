@@ -320,6 +320,7 @@ body {
     align-items: center;
     line-height: 2.0;
     margin-top: 40px;
+    text-align: center;
 }
 
 .final-text-para{
@@ -363,3 +364,34 @@ body {
 }
 
 /* footer end */
+
+
+/* for mobile device */
+@media only screen and (max-width: 600px) {
+    .top-nav{
+        flex-direction: column;
+        z-index: unset;
+        position: inherit;
+    }
+    .search-bar{
+        z-index: unset;
+        position: inherit;
+    }
+    .search-bar-container{
+        flex-direction: column;
+        gap: 4px;
+    }
+    .image-grid, .image-grid-3{
+        grid-template-columns: repeat(1, 1fr)
+    }
+    .download-image-overlay{
+        width: 100%;
+    }
+    .final-text{
+        line-height: unset;
+    }
+    .footer{
+        flex-direction: column;
+    }
+}
+/* mobile device end */
